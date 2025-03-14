@@ -1,0 +1,41 @@
+:root {
+    --title-font-family: "Lato", Helvetica;
+    --title-font-weight: 700;
+    --title-font-size: 32px;
+    --title-letter-spacing: 0px;
+    --title-line-height: normal;
+    --title-font-style: normal;
+    --header-emnu-font-family: "Lato", Helvetica;
+    --header-emnu-font-weight: 300;
+    --header-emnu-font-size: 24px;
+    --header-emnu-letter-spacing: 0px;
+    --header-emnu-line-height: normal;
+    --header-emnu-font-style: normal;
+    --movie-titile-font-family: "Lato", Helvetica;
+    --movie-titile-font-weight: 600;
+    --movie-titile-font-size: 40px;
+    --movie-titile-letter-spacing: 0px;
+    --movie-titile-line-height: normal;
+    --movie-titile-font-style: normal;
+    --category-in-font-family: "Lato", Helvetica;
+    --category-in-font-weight: 400;
+    --category-in-font-size: 14px;
+    --category-in-letter-spacing: 0px;
+    --category-in-line-height: normal;
+    --category-in-font-style: normal;
+    --description-font-family: "Lato", Helvetica;
+    --description-font-weight: 300;
+    --description-font-size: 20px;
+    --description-letter-spacing: 0px;
+    --description-line-height: normal;
+    --description-font-style: normal;
+    --variable-collection-main: rgba(2, 188, 181, 1);
+    --variable-collection-secondary-grey: rgba(179, 179, 179, 1);
+    --variable-collection-main-dark: rgba(2, 158, 152, 1);
+    --variable-collection-main-white: rgba(253, 253, 255, 1);
+    --variable-collection-backgorund: rgba(18, 18, 18, 1);
+    --variable-collection-signin-color: rgba(7, 19, 28, 1);
+    --variable-collection-textinputcolor: rgba(23, 38, 48, 1);
+    --variable-collection-com-color: rgba(179, 179, 179, 0.08);
+  }
+  
