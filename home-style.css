@@ -20,12 +20,20 @@ html,body {
     color: #02BCB5;
 }
 
+.page-container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
 .site-header {
     background: #121212;
     min-width: 100%;
     opacity: 65%;
     white-space: nowrap;
-  }
+}
 
 header{
     display: flex;
@@ -38,14 +46,14 @@ header{
     z-index: 1000;
 }
 
-.header-container{
+.header-left-container{
     display: flex;
     align-items: center;
     position: absolute; 
     right: 2rem;
 }
 
-.header-container-a{
+.main-header-container{
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -72,6 +80,59 @@ nav ul li a{
 
 nav ul li a:hover {
     color: #FDFDFF; 
+}
+
+.search-box {
+    position: relative;
+    margin-right: 15px;
+    border-radius: 25px;
+    transition: width 0.3s ease;
+    width: 40px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 35px;
+}
+
+.search-box.active {
+    width: 200px;
+    cursor: auto;
+    overflow: visible;
+}
+
+.search-box input {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 35px 8px 35px;
+    border-radius: 25px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease, padding 0.3s ease;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.search-box.active input {
+    opacity: 1;
+}
+
+.search-box .fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    z-index: 1;
+    left: 10px;
+    transition: color 0.3s;
+}
+
+.search-box.active .fa-search {
+    color: #fff;
 }
 
 .search-container{
@@ -119,6 +180,7 @@ nav ul li a:hover {
 .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
+
 }
 
 .carousel-track {
@@ -130,36 +192,71 @@ nav ul li a:hover {
 
 .carousel img {
     width: 100%;
-    height: auto;
+    z-index: 1;
 }
 
 .description-container{
-    display: flex;
-    align-items: center;
+    
+    position: absolute;
+    top: 12rem;
+    left: 12rem;
+    z-index: 2;
+    color: #FDFDFF;
+    text-align: left;
+    max-width: 465px;
+
 }
 
 .movie-title {
 
-    position: absolute;
-    top: 24rem;
-    left: 25rem;
-    color: #FDFDFF;
     font-size: 40px;
     font-weight: 600;
+    margin-bottom: 15px;
 
 }
 
 .movie-description{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 300;
+}
 
+.button-container{
+    position: absolute;
+    top: 15rem;
+    left: 12rem;
+    text-align: left;
+    z-index: 2;
+}
+    
 
+.play-button-scr{
+    background-color: #029E98;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 141px;
+    border-radius: 5px;
+}
+
+.play-polygon{
+    position: absolute;
+    width: 13.86px;
+    height: 12px;
+    left: 15px;
+    background: #FDFDFF;
+    transform: rotate(90deg);
 }
 
 .dots {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     right: 50%;
     text-align: center;
-    padding: 17px;
+    padding-bottom: 45px;
+    z-index: 2;
 }
 
   .dot {
