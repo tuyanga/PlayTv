@@ -1,0 +1,359 @@
+
+/* Settings Container */
+.settings-ACC {
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.settings-ACC .div {
+  background-color: var(--variable-collection-backgorund);
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  position: relative;
+  padding: 20px;
+}
+
+/* Header */
+.settings-ACC header {
+  width: 100%;
+  height: 126px;
+  background-color: #121212a6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.settings-ACC .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1239px;
+  margin: 0 auto;
+}
+
+.settings-ACC .logo h1 {
+  font-family: "League Spartan-Bold", Helvetica;
+  font-weight: 700;
+  color: var(--variable-collection-main);
+  font-size: 40px;
+  white-space: nowrap;
+}
+
+.settings-ACC .header-menu ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.settings-ACC .header-menu ul li a {
+  font-family: var(--header-emnu-font-family);
+  font-weight: var(--header-emnu-font-weight);
+  color: #b3b3b3;
+  font-size: var(--header-emnu-font-size);
+  text-decoration: none;
+}
+
+.settings-ACC .search-notif-user {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.settings-ACC .search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0ad9;
+  border-radius: 42px;
+  padding: 8px 16px;
+}
+
+.settings-ACC .search-bar input {
+  background: none;
+  border: none;
+  color: #838383;
+  font-family: "League Spartan-Regular", Helvetica;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.settings-ACC .search-bar input::placeholder {
+  color: #838383;
+}
+
+.settings-ACC .frame-3,
+.settings-ACC .frame-4 {
+  width: 37px;
+  height: 37px;
+  background-size: cover;
+}
+
+.settings-ACC .frame-3 {
+  background-image: url(./img/notification.png);
+}
+
+.settings-ACC .frame-4 {
+  background-image: url(./img/male-user.png);
+}
+
+/* Main Content */
+.settings-ACC main {
+  display: flex;
+  width: 100%;
+  max-width: 1410px;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.settings-ACC aside.sidebar {
+  width: 301px;
+  background-color: var(--variable-collection-backgorund);
+  padding: 10px;
+}
+
+.settings-ACC .sidebar nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settings-ACC .sidebar nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "League Spartan-Regular", Helvetica;
+  font-size: 24px;
+}
+
+.settings-ACC .sidebar nav ul li a:hover {
+  background-color: #172630;
+  /* border-left: 4px solid #02bcb5;
+  color: #02bcb5; */
+}
+.settings-ACC .sidebar nav ul li .active{
+  background-color: #172630;
+  border-left: 4px solid #02bcb5;
+  color: #02bcb5;
+}
+
+.settings-ACC .sidebar nav ul li a.logout {
+  color: #d33232;
+}
+
+.settings-ACC section.account-settings,.faqmain {
+  flex: 1;
+  background-color: var(--variable-collection-backgorund);
+  padding: 30px 50px;
+}
+
+.settings-ACC .account-settings h2,.faqmain h2 {
+  font-family: "League Spartan-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.settings-ACC .account-settings h3, .faq h2{
+  font-family: "League Spartan-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.settings-ACC .account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.settings-ACC .info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #172630;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.settings-ACC .info-item span , .faq p{
+  font-family: "League Spartan-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.settings-ACC .info-item a {
+  font-family: "League Spartan-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.settings-ACC .account-info .info-item:hover{
+
+  color: var(--variable-collection-main);
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--variable-collection-main);
+}
+.settings-ACC .info-item:hover a{
+  color: var(--variable-collection-main);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .settings-ACC .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .settings-ACC .search-notif-user {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .settings-ACC main {
+    flex-direction: column;
+  }
+
+  .settings-ACC aside.sidebar {
+    width: 100%;
+  }
+
+  .settings-ACC section.account-settings {
+    width: 100%;
+    padding: 20px;
+  }
+}
+/* Popup default-оор нуух */
+.settingpasspop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup контент */
+.popup-content {
+  background: #07131c;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+/* Гарчиг */
+.popup-content h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Оролтууд */
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  background-color: #172630;
+  color: white;
+}
+
+/* Хадгалах товч */
+.popup-content button {
+  background: #02bcb5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Хаах товч */
+.x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Responsive загвар */
+@media (max-width: 500px) {
+  .popup-content {
+    width: 95%;
+  }
+}
+.settingtelpop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: #07131c;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #838383;
+  border-radius: 5px;
+  background-color: #172630;
+  color: white;
+}
+
+.popup-content button {
+  background: #02bcb5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  cursor: pointer;
+}
+
