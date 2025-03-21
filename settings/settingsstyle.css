@@ -356,4 +356,93 @@
   width: 20px;
   cursor: pointer;
 }
+/* Popup Styles (unchanged) */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
 
+.popup-content {
+  background-color: #fefefe;
+  margin: 5% auto; /* Adjust margin as needed */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 800px; /* Or whatever max width you want */
+  width: 80%; /* Adjust for smaller screens */
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
+.popup.show {
+  display: block;
+}
+
+/* Styles for .bagts and its contents */
+.bagts {
+  background-color: #07131c;
+  display: flex;
+  flex-direction: row; /* or column, depending on your desired layout */
+  justify-content: center; /* Center the packages horizontally */
+  align-items: center;      /* Center the packages vertically */
+  width: 100%; /* Take up the full width of the popup-content */
+  padding: 20px;  /* Add some padding around the content */
+}
+
+.bagts .container {
+  display: flex;
+  flex-direction: row; /* Keep packages side by side */
+  gap: 20px;      /* Space between packages */
+}
+
+.bagts .package {
+  background-color: #17263070; /* or whatever background you want */
+  border-radius: 28px;
+  padding: 20px;    /* Space inside each package */
+  text-align: center; /* Center the text */
+}
+
+.bagts .image {
+  width: 150px;  /* Adjust image size as needed */
+  height: auto;   /* Maintain aspect ratio */
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.bagts .price {
+  font-family: "Lato-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.bagts .activate-btn {
+  background-color: var(--variable-collection-signin-color);
+  border-radius: 40px;
+  padding: 10px 20px; /* Adjust button size */
+  color: #b3b3b3b2;
+  border: 3px solid;
+  border-color: #838383;
+  cursor: pointer;
+}
