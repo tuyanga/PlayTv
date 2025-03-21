@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayTV Header</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+
+        <header class="main-header">
+            <div class="header-left">
+                <div class="logo">
+                    <a href="#">PlayTV</a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Нүүр</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">BOX</a></li>
+                        <li><a href="#">Миний жагсаалт</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <div class="user-actions">
+                    <div class="search-box" id="headerSearchBox">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Хайх..." id="headerSearchInput">
+                    </div>
+                    <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                    <button class="profile-btn"><i class="fas fa-user"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <div class="search-bar-section">
+            <div class="secondary-header">
+                <div class="header-left-group">
+                    <div class="nav-buttons">
+                        <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="explore-title">Кино Сан</div>
+                </div>
+                <div class="secondary-search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Хайх...">
+                    <select class="movie-select">
+                        <option>Movie</option>
+                        <option>TV Show</option>      
+                        <i class="fas fa-chevron-down"></i>
+                    </select>
+                    <button class="filter-btn" id="filterButton"><i class="fas fa-filter"></i></button>
+                </div>
+            </div>
+
+            <div class="filter-options" id="filterOptions">
+                <div class="filter-row">
+                    <div class="filter-group">
+                        <label>GENRE</label>
+                        <select>
+                            <option>Any</option>
+                            <option>Action</option>
+                            <option>Comedy</option>
+                            </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>YEAR</label>
+                        <select>
+                            <option>Any</option>
+                            <option>2024</option>
+                            <option>2023</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>SORT BY</label>
+                        <select>
+                            <option>Most Popular</option>
+                            <option>Top Rated</option>
+                        </select>
+                    </div>
+                     <div class="filter-group">
+                        <label>COUNTRY</label>
+                        <select>
+                            <option>Any</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="movie-list-section">
+            <h2>Movies</h2> <!-- Fixed: Added a heading for the section -->
+            <div class="movie-list-container">
+            </div>
+            <div class="pagination">
+                <button class="pagination-button prev-page" disabled></button> <!-- Fixed: Replaced < with < -->
+                <span class="page-range">1 - 100</span>
+                <button class="pagination-button next-page">></button> <!-- Fixed: Replaced > with > -->
+            </div>
+        </section>
+
+    </div>
+
+    <script src="search.js"></script>
+
+</body>
+</html>
