@@ -214,8 +214,6 @@ body {
 
 .settings-ACC .sidebar nav ul li a:hover {
   background-color: #172630;
-  /* border-left: 4px solid #02bcb5;
-  color: #02bcb5; */
 }
 .settings-ACC .sidebar nav ul li .active{
   background-color: #172630;
@@ -223,7 +221,7 @@ body {
   color: #02bcb5;
 }
 
-.settings-ACC .sidebar nav ul li a.logout {
+#logout {
   color: #d33232;
 }
 
@@ -445,15 +443,6 @@ body {
   background-color: rgba(0,0,0,0.4);
 }
 
-.popup-content {
-  background-color: #fefefe;
-  margin: 5% auto; /* Adjust margin as needed */
-  padding: 20px;
-  border: 1px solid #888;
-  max-width: 800px; /* Or whatever max width you want */
-  width: 80%; /* Adjust for smaller screens */
-  position: relative;
-}
 
 .close-btn {
   position: absolute;
@@ -468,10 +457,6 @@ body {
 
 .close-btn:hover {
   color: black;
-}
-
-.popup.show {
-  display: block;
 }
 
 /* Styles for .bagts and its contents */
