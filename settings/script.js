@@ -203,4 +203,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function(){
+  const headerSearchBox = document.getElementById('headerSearchBox');
+  const headerSearchInput = document.getElementById('headerSearchInput');
+headerSearchBox.addEventListener('click', () => {
+  headerSearchBox.classList.toggle('active');
+  headerSearchInput.focus();
+});
+document.addEventListener('click', (event) => {
+  if (!headerSearchBox.contains(event.target) && event.target !== headerSearchBox) {
+      headerSearchBox.classList.remove('active');
+  }
+});
+});
   
