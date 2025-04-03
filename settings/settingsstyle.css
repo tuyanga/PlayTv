@@ -1,91 +1,157 @@
 
-/* Settings Container */
-.settings-ACC {
-  background-color: #121212;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.settings-ACC  {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  min-height: 100vh;
-  padding: 20px;
+  padding: 20px; 
+  box-sizing: border-box;
 }
-
-.settings-ACC .div {
-  background-color: var(--variable-collection-backgorund);
-  width: 100%;
-  max-width: 1440px;
-  height: auto;
-  position: relative;
-  padding: 20px;
-}
+/* Settings Container */
 
 /* Header */
-.settings-ACC header {
-  width: 100%;
-  height: 126px;
-  background-color: #121212a6;
+.main-header {
+  background-color: #111;
+  padding: 0; 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-}
-
-.settings-ACC .header-container {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 1239px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
-.settings-ACC .logo h1 {
-  font-family: "League Spartan-Bold", Helvetica;
-  font-weight: 700;
-  color: var(--variable-collection-main);
-  font-size: 40px;
-  white-space: nowrap;
-}
-
-.settings-ACC .header-menu ul {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-
-.settings-ACC .header-menu ul li a {
-  font-family: var(--header-emnu-font-family);
-  font-weight: var(--header-emnu-font-weight);
-  color: #b3b3b3;
-  font-size: var(--header-emnu-font-size);
+.logo a {
+  color: #00c8b3;
   text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.settings-ACC .search-notif-user {
+.header-left {
   display: flex;
   align-items: center;
-  gap: 24px;
+  flex-direction: row;
 }
 
-.settings-ACC .search-bar {
+.header-right {
   display: flex;
   align-items: center;
-  background-color: #0a0a0ad9;
-  border-radius: 42px;
-  padding: 8px 16px;
 }
 
-.settings-ACC .search-bar input {
+.main-nav {
+  margin-left: 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  position: relative;
+  margin-right: 15px;
+  border-radius: 25px;
+  transition: width 0.3s ease;
+  width: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 35px;
+}
+
+.search-box.active {
+  width: 200px;
+  cursor: auto;
+  overflow: visible;
+}
+
+.search-box input {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 35px 8px 35px;
+  border-radius: 25px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease, padding 0.3s ease;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+.search-box.active input {
+  opacity: 1;
+}
+
+.search-box .fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  z-index: 1;
+  left: 10px;
+  transition: color 0.3s;
+}
+
+.search-box.active .fa-search {
+  color: #fff;
+}
+
+.user-actions button {
   background: none;
   border: none;
-  color: #838383;
-  font-family: "League Spartan-Regular", Helvetica;
-  font-size: 24px;
-  margin-left: 10px;
+  color: #999;
+  font-size: 1.2em;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
 }
 
-.settings-ACC .search-bar input::placeholder {
-  color: #838383;
+.user-actions button:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-header {
+      margin-bottom: 20px;
+  }
+
+  .main-nav {
+      display: none;
+  }
 }
 
 .settings-ACC .frame-3,
@@ -138,8 +204,6 @@
 
 .settings-ACC .sidebar nav ul li a:hover {
   background-color: #172630;
-  /* border-left: 4px solid #02bcb5;
-  color: #02bcb5; */
 }
 .settings-ACC .sidebar nav ul li .active{
   background-color: #172630;
@@ -147,7 +211,7 @@
   color: #02bcb5;
 }
 
-.settings-ACC .sidebar nav ul li a.logout {
+#logout {
   color: #d33232;
 }
 
@@ -369,15 +433,6 @@
   background-color: rgba(0,0,0,0.4);
 }
 
-.popup-content {
-  background-color: #fefefe;
-  margin: 5% auto; /* Adjust margin as needed */
-  padding: 20px;
-  border: 1px solid #888;
-  max-width: 800px; /* Or whatever max width you want */
-  width: 80%; /* Adjust for smaller screens */
-  position: relative;
-}
 
 .close-btn {
   position: absolute;
@@ -392,10 +447,6 @@
 
 .close-btn:hover {
   color: black;
-}
-
-.popup.show {
-  display: block;
 }
 
 /* Styles for .bagts and its contents */
@@ -445,4 +496,65 @@
   border: 3px solid;
   border-color: #838383;
   cursor: pointer;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--variable-collection-main)
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

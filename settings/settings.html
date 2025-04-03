@@ -5,37 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="settingstyleguide.css" />
     <link rel="stylesheet" href="settingsstyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Settings - PlayTV</title>
   </head>
   <body>
     <div class="settings-ACC">
-      <header>
-        <div class="header-container">
-
-          <div class="logo">
-            <h1>PlayTV</h1>
-          </div>
-
-          <nav class="header-menu">
-            <ul>
-              <li><a href="#">Нүүр</a></li>
-              <li><a href="#">TV</a></li>
-              <li><a href="#">BOX</a></li>
-              <li><a href="#">Миний жагсаалт</a></li>
-            </ul>
-          </nav>
-
-          <div class="search-notif-user">
-            <div class="search-bar">
-              <img class="search" src="img/search.png" alt="Search" />
-              <input type="text" placeholder="Хайх..." />
+      <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <a href="#">PlayTV</a>
             </div>
-
-            <div class="notifications"></div>
-            <div class="user-profile"></div>
-          </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Нүүр</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">BOX</a></li>
+                    <li><a href="#">Миний жагсаалт</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
+
+        <div class="header-right">
+            <div class="user-actions">
+                <div class="search-box" id="headerSearchBox">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Хайх..." id="headerSearchInput">
+                </div>
+                <button class="notification-btn"><i class="fas fa-bell"></i></button>
+                <button class="profile-btn"><i class="fas fa-user"></i></button>
+            </div>
+        </div>
+    </header>
 
       <main class="main-content">
         <aside class="sidebar">
@@ -44,7 +44,7 @@
               <li><a href="settings.html">Аккаунтын тохиргоо</a></li>
               <li><a href="payment.html">Төлбөрийн хэсэг</a></li>
               <li><a href="FAQ.html">Түгээмэл асуултууд</a></li>
-              <li><a href="index.html">Гарах</a></li>
+              <li><a href="index.html" id="logout">Гарах</a></li>
             </ul>
           </nav>
         </aside>
