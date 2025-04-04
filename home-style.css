@@ -354,3 +354,110 @@ nav ul li a:hover {
 .prev-arrow {
     background: linear-gradient(to right, rgba(18, 18, 18, 0.3), rgba(102, 102, 102, 0));
 }
+
+
+@media (max-width: 768px){
+
+    .container {
+        max-width: 768px; 
+    }
+
+    .logo {
+        font-family: "League Spartan", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    header{
+        min-width: 100%;
+        padding: 1rem 1rem;
+    }
+    
+    .header-left-container{
+        gap: 15px;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav ul li a{
+        font-size: 14px;
+    }
+    .user-actions{
+        gap: 3px;
+    }
+    
+    .user-actions button {
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+
+    .carousel-content {
+        max-width: 55%; 
+        margin-left: 15px;
+    }
+    
+    .movie-title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .movie-description{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    .btn-play {
+        padding: 8px 20px;
+        gap: 6px;
+        font-size: 0.9rem;
+    }
+    .btn-add {
+        width: 30px; 
+        height: 30px;
+        font-size: 1rem;
+    }
+    .carousel-dots {
+        gap: 6px;
+    }
+    
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    .slide-container{
+        min-width: 85%;
+    }
+    .slide-title{
+        margin-top: 3rem;
+        margin-left: 15px;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    .movie-list-container{
+        gap: 0.6rem;
+        padding: 10px;
+        width: max-content;
+    }
+    
+    .movie-card{
+        width: 8rem;
+        height: 12rem;
+    }
+    
+    .slider-row {
+        gap: 15px; 
+        padding-bottom: 10px; 
+    }
+    
+    .slider-arrow{
+        font-size: 2.4rem; 
+        padding: 80px 8px; 
+        border-radius: 4px;
+    }
+
+}
+
