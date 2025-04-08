@@ -71,5 +71,39 @@ class HeaderMenu extends HTMLElement {
 
 customElements.define("pt-header-menu",HeaderMenu);
 
+class MovieSlider extends HTMLElement {
 
+    constructor(){
+        super();
+    }
+
+    connectedCallback(){
+
+        const slider = document.createElement("div");
+        slider.innerHTML = 
+        `<div class="slide-title">
+                Санал болгох
+            </div>
+            <div class="slider-row-wrapper">
+            <button class="slider-arrow prev-arrow" id="prevBtn"><</button>
+                <div class="movie-list-container" id="movieSlider">
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                    <div class="movie-card"></div>
+                </div>
+            <button class="slider-arrow next-arrow" id="nextBtn">></button>
+        `
+        slider.className = "slide-container";
+        this.appendChild(slider);
+    }
+
+}
+
+customElements.define("pt-slider",MovieSlider);
 

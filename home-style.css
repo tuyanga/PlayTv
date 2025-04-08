@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
   }
 
-  .container {
+.container {
     width: 100%;
     max-width: 1440px; /* Adjust max width as needed */
     margin: 0 auto;
@@ -311,14 +311,6 @@ nav ul li a:hover {
 .movie-card:hover{
     transform: scale(1.05);
     z-index: 10;
-}
-
-.slider-row {
-    display: flex;
-    gap: 15px; 
-    padding-bottom: 10px; 
-    width: max-content; 
-    scroll-behavior: smooth; 
 }
 
 .slider-row-wrapper {
