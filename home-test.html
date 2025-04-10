@@ -3,7 +3,6 @@
 <html lang = "en">
 
 <head>
-
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title>PlayTV</title>
@@ -23,72 +22,17 @@
     </header>
 
 <main>  
-    <section class="carousel-track">
-        <div class = "carousel-overlay"></div>
-        <div class="container carousel-content-container">
-            <div class="carousel-content">
-                <h1 class="movie-title">Movie Name</h1>
-                <div class="movie-description">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-                        </p>
-                </div>
-                <div class="button-container">
-                   <pt-play-btn></pt-play-btn>
-                   <pt-add-btn></pt-add-btn>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-dots"></div>
+    <section >
+        <pt-carousel></pt-carousel>
     </section>
     <section>
-        <pt-slider class="container"></pt-slider>
-        <div class="container slide-container">
-            <div class="slide-title">
-                Санал болгох
-            </div>
-            <div class="slider-row-wrapper">
-            <button class="slider-arrow prev-arrow" id="prevBtn"><</button>
-                <div class="movie-list-container" id="movieSlider">
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                </div>
-            <button class="slider-arrow next-arrow" id="nextBtn">></button>
-            </div>
-        </div>
-
-        <div class="container slide-container">
-            <div class="slide-title">
-                Hollywood
-            </div>
-            <div class="slider-row-wrapper">
-            
-                <div class="movie-list-container" id="movieSlider">
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                    <div class="movie-card"></div>
-                </div>
-            <button class="slider-arrow next-arrow" id="nextBtn">></button>
-            </div>
-        </div>
+        <pt-slider title="Санал болгох"></pt-slider>
+        <pt-slider title="Hollywood"></pt-slider>
     </section>
        
-    <script src="carousel.js"></script>
-    <script src="slider.js"></script>
-    <script src="components\pt-play-btn.js"></script>
+    <script src="components/pt-carousel.js"></script>
+    <script src="components/pt-slider.js"></script>
+    <script src="components/pt-play-btn.js"></script>
     
 </body>
 
