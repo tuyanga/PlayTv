@@ -120,7 +120,7 @@ class PhoneChangePopup extends HTMLElement {
       saveBtn.addEventListener("click", () => {
         const phone = shadow.getElementById("newPhone").value.trim();
         const repeat = shadow.getElementById("repeatPhone").value.trim();
-        const mongolianPhoneRegex = /^(83|88|89|90|91|94|95|96|97|98|99)[0-9]{6}$/;
+        const mongolianPhoneRegex = /^(8|9|7)[0-9]{7}$/;
   
         if (!mongolianPhoneRegex.test(phone)) {
           errorEl.textContent = "Утасны дугаар буруу байна. Монголын 8 оронтой дугаар оруулна уу.";
