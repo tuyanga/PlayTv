@@ -13,7 +13,7 @@ class SidebarNavigation extends HTMLElement {
               <li><a href="settings.html">Аккаунтын тохиргоо</a></li>
               <li><a href="payment.html">Төлбөрийн хэсэг</a></li>
               <li><a href="FAQ.html">Түгээмэл асуултууд</a></li>
-              <li><a href="index.html" id="logout">Гарах</a></li>
+              <li><a href=".//index.html" id="logout">Гарах</a></li>
             </ul>              
           </nav>
         </aside>
