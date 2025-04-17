@@ -25,52 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    // Popup-ийг body-д нэмэх
-    const popupHTML = `
-      <div class="settingpasspop" id="password-popup" style="display: none;">
-        <div class="popup-content">
-          <img class="x" src="img/x.svg" id="close-popup" />
-          <h2>Нууц үг өөрчлөх</h2>
-          
-          <input type="password" placeholder="Одоогийн нууц үг">
-          
-          
-          <input type="password" placeholder="Шинэ нууц үг">
-          
-          
-          <input type="password" placeholder="Шинэ нууц үгээ давтах">
-          
-          <button id="save-password">Хадгалах</button>
-        </div>
-      </div>
-    `;
-  
-    document.body.insertAdjacentHTML("beforeend", popupHTML);
-  
-    // DOM-оос шинээр нэмэгдсэн popup элементүүдийг олно
-    const popup = document.getElementById("password-popup");
-    const openPopup = document.getElementById("change-password");
-    const closePopup = document.getElementById("close-popup");
-  
-    // Линк дарахад popup гарч ирнэ
-    openPopup.addEventListener("click", function (event) {
-      event.preventDefault();
-      popup.style.display = "flex";
-    });
-  
-    // X товч дарахад popup хаагдана
-    closePopup.addEventListener("click", function () {
-      popup.style.display = "none";
-    });
-  
-    // Popup гадна дарахад хаагдана
-    popup.addEventListener("click", function (event) {
-      if (event.target === popup) {
-        popup.style.display = "none";
-      }
-    });
-  });
+
 
 
   document.addEventListener("DOMContentLoaded", function () {
